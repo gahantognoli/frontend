@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulando conteúdo e atributos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        .test {
+            border: 2px solid gray;
+            padding: 5px;
+            border-radius: 3px;   
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+           
+            $(':button').on('click', function(){
+                
+                /*var conteudo = $('div').html();
+                
+                console.log(conteudo);
+
+                var texto = $('div').text();
+                
+                console.log(texto);
+
+                $('div').html('<span>Gabriel Antognoli</span>');
+                
+                console.log($('div').html());
+
+                $('div').text('<span>Gabriel Antognoli</span>');
+                
+                console.log(texto);
+
+                var elemento = $('<p>Gabriel Antognoli</p>');
+
+                var conteudo = $('div').html(elemento);
+                
+                console.log(conteudo);
+
+                var texto = $('div').text();
+                
+                console.log(texto);*/
+
+                /*if($(this).val() == 'Adicionar Classe'){
+                    $(this).val('Retirar Classe');
+                }else{
+                    $(this).val('Adicionar Classe');
+                }*/
+
+                //replaceWith - age em cima de valores HTML, ou seja é possivel passar valores html
+
+                var retorno = $('div').replaceWith('<p>Gabriel Antognoli</p>');
+                console.log(retorno);
+
+            });
+           
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div>
+       Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+       Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+       Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+    </div>
+
+    <div>
+        Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+        Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+        Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... Texto estáatico ... <br />
+     </div>
+
+    <input type="button" value="Botao"/><br />
+
+</body>
+
+</html>

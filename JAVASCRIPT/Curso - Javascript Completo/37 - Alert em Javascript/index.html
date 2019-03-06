@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Alert em Javascriptt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <button onclick="myAlertBox()">Alert Box</button>
+
+    <br>
+    <br>
+
+    <button onclick="myConfirmBox()">Confirm Box</button>
+    <p id="show"></p>
+
+    <br>
+
+    <button onclick="myPrompBox()">Prompt Box</button>
+    <p id="show2"></p>
+
+    <script>
+        function myAlertBox(){
+            alert("This is a alert box!");
+        }
+        
+        function myConfirmBox(){
+            var result;
+            var press = confirm("Are you a developer?");
+
+            if (press == true) {
+                
+                result = "You pressed OK!";
+
+            } else {
+                
+                result = "You pressed Cancel!";
+
+            }
+
+            document.getElementById("show").innerHTML = result;
+
+        }
+
+        function myPrompBox(){
+            var result ;
+
+            var car = prompt("Please enter your favorite car");
+
+            if(car != result){
+                result = "Your favorite car is " + car;
+                document.getElementById("show2").innerHTML = result;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

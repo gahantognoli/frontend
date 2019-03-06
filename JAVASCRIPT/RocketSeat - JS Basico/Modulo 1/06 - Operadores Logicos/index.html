@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Operadores Lógicos</title>
+</head>
+<body>
+    
+    <script>
+        // Operadores Lógicos
+
+        var sexo = "M", idade = 23;
+
+        //AND
+        if(sexo == "M" && idade >= 18){
+            console.log("OK");
+        }
+
+        //OR
+        if(sexo == "F" || idade >= 18){
+            console.log("OK");
+        }
+
+        //NOT 
+        if(sexo !== "F"){
+            console.log("OK");
+        }
+
+        //atribuindo uma condição diretamente na variável.
+        var masculino = sexo === "M"; //masculino recebe true;
+
+    </script>
+</body>
+</html>

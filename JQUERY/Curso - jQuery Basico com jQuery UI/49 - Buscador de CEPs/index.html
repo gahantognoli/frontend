@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plugin - ZIP Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.2.custom/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/jZipCode_1.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        Cep: <input type="text" id="cep" placeholder="99999-999"><br />
+        Rua: <input type="text" id="rua"><br />
+        Cidade: <input type="text" id="distrito"><br />
+        Estado: <input type="text" id="cidade"><br />
+        Pais: <input type="text" id="estado"><br />
+    </div>
+
+    <div id="multi"></div>
+    <div id="map" style="width: 300px; height: 300px;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JS - Exercicio 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+        //Exercicio 2
+
+        /*
+        Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+
+        function pares(x, y) {
+        // código aqui
+        }
+
+        pares(32, 321);
+        */
+
+        //Criando a função.
+
+        function pares(x, y){
+            for(var i = x; i <= y; i++){
+                //Se o resto da divisão do número em questão for igual a 0, então o número é par.
+                if(i % 2 == 0){
+                    console.log("O numero " + i + " é par");
+                }
+            }
+        }
+        
+        //chamando a função.
+        pares(32, 321);
+
+    </script>
+</body>
+
+</html>

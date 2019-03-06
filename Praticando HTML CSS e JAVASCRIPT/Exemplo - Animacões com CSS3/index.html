@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+</head>
+<body>
+	<div class="background">
+		<div class="hidden-words">
+			<div class="infinite-words">
+				<p>DevMedia é </p>
+				<ul>
+					<li>Exemplos</li>
+					<li>Cursos</li>
+					<li>Artigos</li>
+					<li>Códigos</li>
+					<li>Tudo</li>
+					<li>Exemplos</li>
+				</ul>
+			</div>
+			<div class="hover-words">
+				<p>Passe o mouse</p>
+				<ul>
+					<li>Aqui!</li>
+				</ul>
+			</div>
+			<div class="click-words">
+				<p>Clique aqui</p>
+				<ul>
+					<li>veja</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.getElementsByClassName("click-words")[0].addEventListener("click", function(){
+			var classe = this.getAttribute("class") + " active-animation";
+			this.setAttribute("class", classe);
+		})
+	</script>
+</body>
+</html>

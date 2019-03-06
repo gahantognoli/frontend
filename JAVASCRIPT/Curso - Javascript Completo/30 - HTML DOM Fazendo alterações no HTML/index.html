@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML DOM Fazendo alterações no HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <h1>HTML DOM - My First Test</h1>
+
+    <script>
+        document.write(Date());    
+    </script>
+
+    <br>
+
+    <h3 id="myHeader">Hello World!</h3>
+
+    <script>
+        var elementHeader = document.getElementById("myHeader");
+        elementHeader.innerHTML = "New Content to myHeader.";
+    </script>
+
+    <br>
+
+    <img src="img/perfil.jpg" alt="perfil" id="imagem">
+
+    <!-- TROCANDO IMAGEM -->
+    <script>
+        document.getElementById("imagem").src = "img/perfil2.jpg";
+
+        /*var imagem = document.getElementById("imagem");
+        imagem.setAttribute("src", "img/perfil2.jpg");*/
+    </script>
+
+</body>
+</html>

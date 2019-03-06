@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercicio 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="nome">
+        <button id="btnAdicionar">Adicionar</button>
+    </div>
+
+    <script>
+        //Exercicio 4
+
+        /*
+            Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+
+            <input type="text" name="nome">
+            <button onClick="adicionar()">Adicionar</button>
+
+            Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de nomes 
+            baseado no nome preenchido no input e renderizando o novo item em tela juntos aos demais itens anteriores. 
+            Além disso, o conteúdo do input deve ser apagado após o clique.
+        */
+        
+        //Criando o vetor
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        //Criando a lista
+        var lista = document.createElement("ul");
+
+        //Adicionando lista ao container.
+        var container = document.querySelector(".container");
+        container.appendChild(lista);
+
+        //Criando os itens da lista
+        for (let nome of nomes) {
+            var listItem = document.createElement("li");
+            //Criando o texto do listItem (nome do vetor).
+            var textListItem = document.createTextNode(nome);
+            //Adicionando o texto ao <li>
+            listItem.appendChild(textListItem);
+            //Adicionando o <li> no <ul>
+            lista.appendChild(listItem);
+        }
+
+        //Adicionando evento de clique no botão;
+        var botaoAdicionar = document.querySelector("#btnAdicionar");
+        botaoAdicionar.onclick = adicionarItem;
+
+        //Função que adiciona itens a lista criada, com o valor digitado no campo de texto.
+        function adicionarItem(valor){
+            //Pegando o valor do input.
+            var input = document.querySelector("input[name=nome]");
+            //Pegando a lista.
+            var lista = document.querySelector("ul");
+            //Criando o novo item da lista.
+            var newItem = document.createElement("li");
+            //Criando o texto do novo elemento com o valor recebido no input.
+            var textoNewItem = document.createTextNode(input.value);
+            //Adicionando o texto ao novo item da lista.
+            newItem.appendChild(textoNewItem);
+            //Adicionando o item da lista na lista.
+            lista.appendChild(newItem);
+            //Depois de adicionado o item, limpamos o valor do campo input.
+            input.value = "";
+        }
+
+    </script>
+</body>
+
+</html>

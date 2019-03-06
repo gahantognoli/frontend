@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Propriedades e Métodos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <p>
+        <button onclick="TestArray1()">Click Here to Test 1</button>
+    </p>
+
+    <p>
+        <button onclick="TestArray2()">Click Here to Test 1</button>
+    </p>
+
+    <p>
+       <span id="demo"></span>
+    </p>
+
+    <script>
+    
+        function TestArray1(){
+            var fruits = new Array(); //criando um objeto array.
+            fruits[0] = "Apple";
+            fruits[1] = "Lemon";
+            fruits[2] = "Orange";
+            fruits[3] = "Strawberry";
+
+            alert(fruits.length);//quantos elementos tem o array.
+        }
+
+        function TestArray2(){
+            var cars1 = ["Fiat", "Ford"];
+            var cars2 = ["Ferrari", "BMW", "Audi"];
+            var carsFinal = cars1.concat(cars2);
+            
+            var out = "";
+
+            for(var i = 0; i < carsFinal.length; i++){
+                out += carsFinal[i] + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = out;
+            
+        }
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML DOM (Document Object Model) Nodes (Elementos)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div id="myDivNew">
+        <p id="p1New">
+            Gabriel is a Developer.
+        </p>
+        <p id="p2New">
+            DevMedia is a great company.
+        </p>
+    </div>
+
+    <p>
+        <button id="myButton">Create new Paragrafo</button>
+    </p>
+
+    <div id="myDivRemove">
+        <p id="p1Remove">My favorite color is a blue</p>
+        <p id="p2Remove">Ferrari is a best car</p>
+    </div>
+
+    <p>
+        <button id="myButtonRemove">Remove element</button>
+    </p>
+
+    <script>
+        //adicionar um novo parafrago na div "myDivNew".
+        document.getElementById("myButton").onclick = function () {
+            var newP = document.createElement("p");
+            var node = document.createTextNode("This is a new paragraph.");
+            newP.appendChild(node);
+
+            var myElement = document.getElementById("myDivNew");
+            myElement.appendChild(newP);
+        }
+        
+        //Remover elementos node.
+        document.getElementById("myButtonRemove").onclick = function () {
+            var parent = document.getElementById("myDivRemove");
+            var child = document.getElementById("p1Remove");
+            parent.removeChild(child);
+        }
+
+    </script>
+
+</body>
+
+</html>

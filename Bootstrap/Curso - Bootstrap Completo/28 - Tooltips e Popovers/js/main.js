@@ -1,0 +1,6 @@
+$(function(){
+
+   $('.tooltip-ini').tooltip();
+   
+
+});

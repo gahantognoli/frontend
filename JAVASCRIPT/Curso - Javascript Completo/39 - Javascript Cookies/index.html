@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Cookies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <button onclick="setCookie()">Set a Cookie</button>
+
+    <br><br>
+
+    <button onclick="readCookie()">Get a value of Cookie</button>
+
+    <script>
+    
+        function setCookie(){
+            //Criando um cookie. Expiração e nome do cookie.
+            var name = prompt("Please enter your name: ");
+            var exdays = 365; // quantidade de dias para o cookie expirar.
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value = escape(name) + ((exdays == null) ? "" :"; expires = " + exdate.toUTCString()); //codificar uma string em ASCII.
+            document.cookie = "name=" + c_value;
+        }
+
+        function readCookie(){
+            var cookie_value = document.cookie; // capturando o que está arzamenado no cookie;
+            var cookie_start = cookie_value.indexOf("name=");
+            if(cookie_start == -1) {
+                cookie_start = cookie_value.indexOf("name=");
+            }
+            
+            if(cookie_start == -1){
+                cookie_start = null;
+            }else{
+                cookie_start = cookie_value.indexOf("=", cookie_start + 1);
+                var cookie_end = cookie_value.indexOf(";", cookie_start);
+                if(cookie_end == -1){
+                    cookie_end = cookie_value.length;
+                }
+                cookie_value = unescape(cookie_value.substr(cookie_start, cookie_end)); 
+            }
+            alert("The value storage is: " + cookie_value); //mostrando o cookie.
+        }
+    
+    </script>
+
+</body>
+</html>

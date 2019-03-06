@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Inserindo elementos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        .test {
+            border: 2px solid gray;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $(':button').on('click', function () {
+                $('#div1').append($('span'));
+
+                var imagem = $('<img>', {
+                    'src': '../img/macaco.jpg',
+                    'border': '1',
+                });
+
+                imagem.on('mouseover', function () {
+                    
+                    $(this).css({
+                        'transition': '0.5s ease'
+                    });
+
+                    $(this).width('200px');
+                    $(this).height('200px');
+
+                })
+                .on('mouseleave', function(){
+                    $(this).css({
+                        'transition': '0.5s ease'
+                    });
+                    
+                    $(this).width('150px');
+                    $(this).height('150px');
+                   
+                });
+
+                $('#div1').append(imagem);
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <span>Gabriel Antognoli</span>
+
+    <div id="div1" class="test">
+        <p id="parafrago1">Teste</p>
+    </div>
+
+    <!--
+    <div id="div2" class="test">
+        <p id="parafrago2">Teste 2</p>
+    </div>
+    -->
+    <input type="button" value="Append" />
+    <br />
+
+</body>
+
+</html>

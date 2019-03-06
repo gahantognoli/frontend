@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Operadores Especiais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <p>
+        x = 12; y = 15 =>
+        <script>
+            //Operador ternario = forma abreviada de comparação if e else.
+            var x = 12;
+            var y = 15;
+            var out = (x === y) ? "110,00" : "100,00";
+            document.write(out);
+        </script>
+    </p>
+
+    <p>
+        <script>
+            var i = 0;
+            var k = 0;
+            var j = 15;
+            //Operador "," do js fazendo incremento de duas variáveis distintas.possibilita realizar mais de uma operação
+            for(i = 0; i <= 10; i++, j++){
+                k = i + j;
+            }
+            
+            document.write("k = " + k);
+
+        </script>
+    </p>
+
+    <p>
+        <script>
+            //Operador "typeof" do js, verifica qual o tipo de dados e retorna um string informando o seu tipo.
+            
+            var valor1 = 1;
+            var valor2 = "1";
+            var valor3 = ["1", "2"];
+
+            document.writeln(typeof valor1); //number
+            document.writeln(typeof valor2); //string
+            document.writeln(typeof valor3); //object
+
+        </script>
+    </p>
+
+</body>
+</html>

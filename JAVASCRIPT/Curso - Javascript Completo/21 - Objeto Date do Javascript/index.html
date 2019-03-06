@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Objeto Date do Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="TestDate1()">Click Here to Test 1 </button>
+    </p>
+
+    <p>
+        <button onclick="TestDate2()">Click Here to Test 2</button>
+    </p>
+
+    <p>
+        <button onclick="TestDate3()">Click Here to Test 3</button>
+    </p>
+
+    <script>
+
+        function TestDate1() {
+            var mydatenow = new Date(); //retorna a data atual do computador do client.
+            alert(mydatenow);
+        }
+
+        function TestDate2() {
+            var year = new Date();
+            alert(year.getFullYear()); //retorna o ano.
+        }
+
+        function TestDate3() {
+            var d = new Date();
+            d.setFullYear(2018, 07, 20); // criando novo dia;
+            alert(d);
+        }
+
+    </script>
+
+</body>
+
+</html>

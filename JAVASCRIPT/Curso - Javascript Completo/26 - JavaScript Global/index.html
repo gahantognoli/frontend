@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Global</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <p>
+        <button onclick="TestGlobalJS1()">Click Here to Test 1</button>
+    </p>
+
+    <p>
+        <button onclick="TestGlobalJS2()">Click Here to Test 2</button>
+    </p>
+
+    <p>
+        <button onclick="TestGlobalJS3()">Click Here to Test 3</button>
+    </p>
+
+    <script>
+    
+        function TestGlobalJS1() {
+            //isNaN - Verifica se não é um número.
+            var result = "The 123 in NaN is " + isNaN(123) + "\n";
+            result += "The 3.14 in NaN is " + isNaN(3.14) + "\n";
+            result += "The Gabriel in NaN is " +  isNaN("Gabriel") + "\n";
+            alert(result);
+        }
+
+        function TestGlobalJS2(){
+            //parseFloat - processa uma string e devolve um number de ponto flutuante.
+            var result = "The 10 in NaN is " + parseFloat("10") + "\n";
+            result += "The 3.14 in NaN is " + parseFloat("3.14") + "\n";
+            result += "The Gabriel in NaN is " +  isNaN("Gabriel") + "\n";
+            alert(result); 
+        }
+
+        function TestGlobalJS3(){
+            var out  = espace("Gabriel Antognoli is a developer.");
+            alert(out);
+        }
+
+    </script>
+
+</body>
+</html>

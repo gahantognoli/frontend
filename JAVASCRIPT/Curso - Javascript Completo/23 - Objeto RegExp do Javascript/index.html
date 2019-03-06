@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Objeto RegExp do Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="testRegExp1()">Click Here to Test 1</button>
+    </p>
+
+    <p>
+        <button onclick="testRegExp2()">Click Here to Test 2</button>
+    </p>
+
+    <p>
+        <button onclick="testRegExp3()">Click Here to Test 3</button>
+    </p>
+
+    <p>
+        <button onclick="testRegExp4()">Click Here to Test 4</button>
+    </p>
+
+    <script>
+
+        function testRegExp1() {
+            var str = "Gabriel Antognoli is a Developer";
+            var patt = /antognoli/i; //padrão que busba pela palavra de modo case insensitive. i = ignore case.
+            alert(str.match(patt)); //match = corresponde/combina. Busca o padrão na string "str".
+        }
+
+        function testRegExp2() {
+            var str = "Gabriel Antognoli is a Developer. DevMedia is a company";
+            var patt = /is/g; //Todas as ocorrencias do pattern.
+            var str2 = str.match(patt);
+            var array = str.split(",");
+            alert("quantidade de ocorrencias: " + (array.length + 1));
+        }
+
+        function testRegExp3() {
+            var patt = new RegExp("antognoli", "i");
+            alert(patt.test("Gabriel Antognoli is a Developer")); //retorna true ou false, para caso achar a expressão.
+        }
+
+        function testRegExp4() {
+            var patt = new RegExp("IS", "i");
+            alert(patt.exec("Gabriel Antognoli is a Developer"));
+        }
+
+    </script>
+
+</body>
+
+</html>

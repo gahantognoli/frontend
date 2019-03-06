@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eventos HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="testOnload()">
+
+    <p>
+        <input type="text" id="campo" onkeypress="showKeyPress(event)">
+    </p>
+
+    <script>
+    
+        function testOnload() {
+            alert("Hello World!\nPage is loaded.");
+        }
+
+        function showKeyPress(e) {
+            var x = e.which; // pega a tecla apertada.
+            var keychar = String.fromCharCode(x); //converter o codigo do caracter para uma string.
+            alert("The key " + keychar + " was pressed.");
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript OO Pilares da Programação Orientada a Objetos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <script>
+        //O Javascript não possui uma palavra revervada para representar uma classe, 
+        //para isso é usado o function.
+        function Car(speed){
+            //Tudo o que estiver no bloco de código da function é considera o construtor da classe(function).
+            alert("Class Car Instantiaded");
+
+            //Propriedade da classe.
+            this.speed = speed;
+        }
+
+        //Instanciando objeto.
+        var car1 = new Car(40);
+        var car2 = new Car(60);
+
+        alert("Car1 speed: " + car1.speed);
+        alert("Car2 speed: " + car2.speed); 
+    
+    </script>
+
+</body>
+</html>

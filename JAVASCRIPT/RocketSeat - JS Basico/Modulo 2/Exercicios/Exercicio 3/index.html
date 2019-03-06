@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercicio 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+
+    <script>
+        //Exercicio 3
+
+        /*
+            A partir do seguinte vetor:
+
+            var nomes = ['Diego', 'Gabriel', 'Lucas'];
+            Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+
+            Diego
+            Gabriel
+            Lucas
+        */
+        
+        //Criando o vetor
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        //Criando a lista
+        var lista = document.createElement("ul");
+        
+        //Adicionando lista ao container.
+        var container = document.querySelector(".container");
+        container.appendChild(lista);
+
+        //Criando os itens da lista
+        for(let nome of nomes){
+            var listItem = document.createElement("li");
+            //Criando o texto do listItem (nome do vetor).
+            var textListItem = document.createTextNode(nome);
+            //Adicionando o texto ao <li>
+            listItem.appendChild(textListItem);
+            //Adicionando o <li> no <ul>
+            lista.appendChild(listItem); 
+        }
+
+    </script>
+</body>
+</html>

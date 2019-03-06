@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI - DevMedia</title>
+		
+		<script type="text/javascript" src="jquery-ui-1.11.2.custom/external/jquery/jquery.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="bootstrap3.js"></script>
+		<script type="text/javascript" src="pwstrength.js"></script>
+		
+		<link rel="stylesheet" href="bootstrap3.css" type="text/css"/>
+		
+		<style type="text/css">
+			
+		</style>
+		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				"use strict";
+				var options = {};
+				options.ui = {
+					//container: "#senha-container",
+					//showVerdictsInsideProgressBar: true,
+					//viewports: {
+						//progress: ".forca-senha"
+					//},
+					verdicts: ["Fraca", "Normal", "Média", "Forte", "Muito Forte"],
+					showPopover: true,
+					showErrors: true,
+					showProgressBar: false,
+					errorMessages: {
+					  wordLength: "Sua senha é muito pequena",
+					  wordNotEmail: "Do not use your email as your password",
+					  wordSimilarToUsername: "Your password cannot contain your username",
+					  wordTwoCharacterClasses: "Use different character classes",
+					  wordRepetitions: "Too many repetitions",
+					  wordSequences: "Sua senha contém sequências"
+					}
+				};
+				options.common = {
+					debug: true,
+					onLoad: function () {
+						$('#mensagens').text('Insira a senha');
+					}
+				}
+				$(':password').pwstrength(options);
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>Exemplo Pass Streng</h1>
+			
+			<form role="form">
+				<div class="row" id="senha-container">
+					<label for="senha">Senha</label>
+					<input type="password" class="form-control" id="senha" placeholder="Senha"/><br>
+					<div class="col-sm-6">
+						<div class="forca-senha"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="mensagens" class="col-sm-12"></div>
+				</div>			
+			</form>
+			
+		</div>
+	</body>
+</html>

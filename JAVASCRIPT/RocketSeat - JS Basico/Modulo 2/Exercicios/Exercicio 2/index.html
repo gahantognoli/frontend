@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercicio 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+        //Exericio 2
+
+        /*
+            Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de algum 
+            quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+
+            function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+                return color;
+            }
+
+            var newColor = getRandomColor(); // #E943F0
+
+        */
+
+        var container = document.querySelector(".container");
+        //Criando o botão
+        var botao = document.createElement("button");
+
+        //Criando texto e adicionando ao botão.
+        var textoBotao = document.createTextNode("Adicionar elemento");
+        botao.appendChild(textoBotao);
+
+        //Adicionado o botão ao body do HTML.
+        container.appendChild(botao);
+
+        //Quando o botão for clicado irá chamar a função "CriaElemento()";
+        botao.onclick = CriaElemento;
+
+        function CriaElemento() {
+            //Criando elemento e definindo alguns estilos.
+            var elemento = document.createElement("div");
+            elemento.style.width = "100px";
+            elemento.style.height = "100px";
+            elemento.style.backgroundColor = "red";
+            elemento.setAttribute("class", "elemento");
+
+            //Adicionando o elemento criado ao container.
+            var container = document.querySelector(".container");
+            container.appendChild(elemento);
+
+            var elementosCriados = document.querySelectorAll(".elemento");
+            
+            //Percorrendo os elementos criados.
+            for (let elemento of elementosCriados) {
+
+                elemento.onmouseover = trocaCor;
+
+                //Função que seleciona o elemento e troca de cor.
+                function trocaCor() {
+                    var newColor = getRandomColor();
+                    //this = faz referencia ao objeto do DOM que está executando o evento.
+                    this.style.backgroundColor = newColor; 
+                }
+            }
+        }
+
+        //Função que gera cores aleatórias.
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+    </script>
+</body>
+
+</html>

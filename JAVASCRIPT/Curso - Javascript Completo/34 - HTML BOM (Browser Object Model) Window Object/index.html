@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML BOM (Browser Object Model) Window Object</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <p id="showSize"></p>
+
+    <script>
+        //varias formas.
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth; 
+        var heigth = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        
+        var x = document.getElementById("showSize");
+        x.innerHTML = "Browser window width: " + width + " px and Heigth: " + heigth + " px";
+
+    </script>
+
+    <button onclick="window.close();">Close</button>
+
+</body>
+</html>

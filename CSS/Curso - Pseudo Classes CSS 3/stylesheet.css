@@ -1,0 +1,48 @@
+p {
+	font: 14px/22px "Helvetica Neue", arial, sans-serif;
+}
+
+/* pseudo classe que selecione o primeiro paragrafo do container */
+p:first-of-type {
+	font-style: italic;
+}
+
+/* pseudo classe que selecione o resultado da multiplicação dos parametros passados */
+p:nth-of-type(2n+1) {
+	background-color: #eee;
+}
+
+/* pseudo classe que selecione o resultado da multiplicação dos parametros passados */
+tr:nth-of-type(2n+1){
+	background-color: #eee;
+}
+
+/* Seleciona o input que está no estado disabled */
+input:disabled {
+	background-color: #eee;
+	cursor: not-allowed;
+	border: 1px solid #222;
+}
+
+/* Seleciona o input que está no estado read-only */
+input:read-only {
+	background-color: #eee;
+	cursor: not-allowed;
+	border: 1px solid #222;
+}
+
+/* + seleciona o elemento mais próximo */
+input:checked + label {
+	color: green;	
+}
+
+input:disabled {
+	border: 1px solid red;
+}
+
+/* Seleciona os inputs que NÃO estão desabilitados */
+input:not(:disabled) {
+	border: 1px solid green;
+}
+
+

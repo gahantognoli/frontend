@@ -1,0 +1,9 @@
+<app-painel-simples titulo="Consultas Marcadas" col="col-sm-6">
+  <app-consulta-por-especidade [consultas]="consultas.realizadas"></app-consulta-por-especidade>
+</app-painel-simples>
+
+<app-painel-simples titulo="Consultas Marcadas - Próximos 30 dias" col="col-sm-6">
+  <app-consulta-por-especidade [consultas]="consultas.marcadas">
+
+  </app-consulta-por-especidade>
+</app-painel-simples>

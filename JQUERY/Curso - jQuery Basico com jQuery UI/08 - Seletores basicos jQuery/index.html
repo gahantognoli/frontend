@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Filtros de seletores.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+            /*$('table td:first').css('background-color', 'green');
+            $('table td:last').css('background-color', 'green');
+            $('td:eq(2), td:eq(3)').css('background-color', 'green');*/
+
+            //Efeito zebrado
+            //$('tr:even').css('background-color', '#EEE'); //even = par
+            //$('tr:odd').css('background-color', '#EEE'); //odd = ímpar
+
+            //Menor e maior
+            //$('tr:lt(3)').css('background-color', '#EEE');
+            //$('tr:gt(3)').css('background-color', '#EEE');
+
+            //negação
+            $('tr:not(tr:eq(3))').css('background-color', '#EEE');
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <table border="1" cellspacing="0" cellpadding="3">
+
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>Endereço</td>
+        </tr>
+
+        <tr>
+            <td>Diego</td>
+            <td>24</td>
+            <td>R Teste</td>
+        </tr>
+
+        <tr>
+            <td>Sandra</td>
+            <td>45</td>
+            <td>R Teste 2</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>34</td>
+            <td>R Gabriel</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>34</td>
+            <td>R Gabriel</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>34</td>
+            <td>R Gabriel</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

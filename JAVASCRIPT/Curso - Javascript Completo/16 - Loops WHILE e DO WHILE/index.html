@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Loops WHILE e DO WHILE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <p>
+        <button onclick="testWhile()">Chick Here to result</button>
+    </p>
+
+    <p>
+        <span id="out1">Result is here!</span>
+    </p>
+
+    <p>
+        <button onclick="testeDoWhile()">Chick Here to result 2</button>
+    </p>
+
+    <p>
+        <span id="out2">Result is here!</span>
+    </p>
+
+<script>
+
+    function testWhile(){
+
+        var result = "";
+        var number = 1;
+
+        while(number < 10){
+            result = result + " " + number;
+            number++;
+        }
+
+        document.getElementById("out1").innerHTML = result;
+
+    }
+
+    function testeDoWhile(){
+
+        var result = "";
+        var number = 1;
+
+        do{
+            result = result + " " + number;
+        }while(number < 1);
+
+        document.getElementById("out2").innerHTML = result;
+
+    }
+
+</script>
+
+</body>
+</html>

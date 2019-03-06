@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-barra-navegacao (click)="menuLateral.toggle()"></app-barra-navegacao>
+
+<div class="main">
+  <app-menu-lateral #menuLateral></app-menu-lateral>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

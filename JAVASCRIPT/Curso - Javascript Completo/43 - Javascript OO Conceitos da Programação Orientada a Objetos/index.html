@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript OO Conceitos da Programação Orientada a Objetos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+        /*
+        //O Javascript não possui uma palavra revervada para representar uma classe, 
+        //para isso é usado o function.
+        function Car(speed) {
+            //Tudo o que estiver no bloco de código da function é considera o construtor da classe(function).
+            alert("Class Car Instantiaded");
+
+            //Propriedade da classe.
+            this.speed = speed;
+        }
+
+        //Criando um nova propriedade com o "prototype".
+        Car.prototype.msg_speed = "This is a message of Speed";
+        
+        //Crinado um setSpeed para a classe Car.
+        Car.prototype.setSpeed = function (speed) {
+            this.speed = speed;
+            alert("Car speed changed!");
+        }
+        //Instanciando objeto.
+        var car1 = new Car(40);
+        var car2 = new Car(60);
+
+        //alert("Car1 speed: " + car1.speed);
+        //alert("Car2 speed: " + car2.speed);
+
+        alert(car1.msg_speed);
+        
+        //Setando a propriedade speed da classe Car.
+        car1.setSpeed(120);
+        car2.setSpeed(140);
+
+        alert("Car1 speed: " + car1.speed);
+        alert("Car2 speed: " + car2.speed);
+        */
+
+        //EXEMPLO DE HERANÇA EM JS.
+        function Car(){};
+        //adicionando atributo.
+        Car.prototype.msg_speed = "This is a message of Speed";
+        //Encapsulamento com setSpeed.
+        Car.prototype.setSpeed = function(speed){
+            this.setSpeed = speed;
+            alert("Car speed changed!");
+        }
+
+        //Fazendo a herança.
+        function Ferrari(){};
+        Ferrari.prototype = new Car(); //herança.
+        //Apontando para o construtor da classe Ferrari.
+        Ferrari.prototype.constructor = Ferrari;
+        
+        //Fazendo override do método setSpeed da classe Car herdade.
+        Ferrari.prototype.setSpeed = function(speed){
+            this.speed = speed;
+            alert("Ferrari speed changed!");
+        }
+
+        var ferrariOOP = new Ferrari();
+        ferrariOOP.setSpeed(200);
+
+    </script>
+
+</body>
+
+</html>

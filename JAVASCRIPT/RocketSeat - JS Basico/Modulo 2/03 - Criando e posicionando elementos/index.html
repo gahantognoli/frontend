@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS - Criando e posicionando elementos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" id="campo" />
+    </div>
+    
+    <script>
+        // Criando e posicionando elementos com JS
+        
+        //Criando um link (a)
+        var linkElement = document.createElement("a");
+        //Setando atributo "href" para a tag a.
+        linkElement.setAttribute("href", "https://www.google.com.br")//parametros = nome atributo, valor atributo.
+        //Criando o atributo title para o link.
+        linkElement.setAttribute("title", "Google");
+
+        //Colocando um texto para o elemento.
+        var textElement = document.createTextNode("Acessar o Google"); //createTextNode = cria um texto no javascript.
+        //Adicionando o texto ao link(tag a).
+        linkElement.appendChild(textElement); //appendChild = adicione um filho ao elemento, nesse caso o texto.
+
+        //Adicionando o elemento a div com id = app.
+        var containerElement = document.querySelector("#app");
+        //adicionando o link dentro da div app.
+        containerElement.appendChild(linkElement);
+
+        //Remover um elemento
+        var campo = document.querySelector("#campo");
+        containerElement.removeChild(campo);
+    </script>
+</body>
+</html>

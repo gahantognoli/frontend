@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Objetos Boolean e Number do Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="testeBoolean()">Click Here to result</button>
+    </p>
+
+    <p>
+        <button onclick="testNumber()">Click Here to result</button>
+    </p>
+
+    <p>
+        <button onclick="testNumber2()">Click Here to result</button>
+    </p>
+
+    <script>
+
+        function testeBoolean() {
+            var myBoolean = new Boolean("1");//construtor = true;
+            var x = myBoolean.valueOf(); //retorna o valor do objeto(true/false);
+            alert("The object is a boolean: " + x);
+        }
+
+        function testNumber() {
+            //Não precisa ser instânciado.
+            var x = Number.MAX_VALUE; // retorna o valor máximo que o number pode armazenar no jsvascript.
+            alert(x);
+        }
+
+        function testNumber2() {
+            var number = 3.14159; // a var number é um objeto de NUMBER agora.
+            var n = number.toFixed(2); // limita 2 casas decimais ao número.
+            alert(n);
+        }
+
+    </script>
+
+</body>
+
+</html>

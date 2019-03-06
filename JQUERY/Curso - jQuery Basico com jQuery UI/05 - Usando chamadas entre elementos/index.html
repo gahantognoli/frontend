@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chamadas encadeadas jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        /*window.onload = function () {
+            document.getElementById(clique).onclick = HelloWorld;
+        }*/
+
+        $(document).ready(function(){
+            $("#div1 a.x, #div2 a.x").on("click", HelloWorld);
+        });
+
+        function HelloWorld() {
+            alert("Hello World!");
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div id="div1">
+        <a href="#" class="x">Clique!</a>
+        <a href="#" class="x">Clique2!</a>
+        <a href="#">Clique3!</a>
+    </div>
+
+    <div id="div2">
+        <a href="#" class="x">Clique4!</a>
+    </div>
+
+    <div id="div3">
+        <a href="#">Clique5!</a>
+    </div>
+
+</body>
+
+</html>

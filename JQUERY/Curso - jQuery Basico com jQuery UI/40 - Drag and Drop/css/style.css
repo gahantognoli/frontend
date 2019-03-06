@@ -1,0 +1,29 @@
+#drag {
+    background-color: #222;
+    color: #EEE;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#drop {
+    background-color: #EEE;
+    color: #222;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 200px;
+    border: 1px solid #222;
+}
+
+div {
+    display: inline-block;
+}
+
+.drop_hover {
+    background-color: darkcyan;
+}
+
+

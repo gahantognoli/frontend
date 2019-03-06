@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Eventos de Mouse com jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        .paragrafo {
+            width: 250px;
+            height: 80px;
+            border: 2px solid #222;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 25pt;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        label{
+            font-size: 20pt;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="div1" class="test">
+        <label for="">Result Event</label>
+        <p id="paragrafo1" class="paragrafo"></p>
+        <label for="">Event</label>
+    
+        <form action="">
+            Nome: <br /> 
+            <input type="text" id="nome" name="nome" /><br />
+            
+            Sexo: <br /> 
+            <input type="radio" name="sexo" value="M" />M
+            <input type="radio" name="sexo" value="F" />F <br />
+            Estado: 
+            <select name="" id="estados">
+                <option value="Bahia">Bahia</option>
+                <option value="Ceara">Ceará</option>
+                <option value="São Paulo">São Paulo</option>
+            </select><br />
+            
+            Descrição: 
+            <textarea>Texto ABCD</textarea><br />
+            
+            <input type="button" value="Enviar">
+            <input type="button" id="reset" value="Resetar">
+        </form>
+        
+    </div>
+    
+</body>
+
+</html>

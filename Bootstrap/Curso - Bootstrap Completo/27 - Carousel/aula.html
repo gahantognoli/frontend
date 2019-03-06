@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 27</title>
+    <!-- Adicionar CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div id="carousel01" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel01" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel01" data-slide-to="1"></li>
+                        <li data-target="#carousel01" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="../imgs/imagem02.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Titulo da imagem</h3>
+                                <p>Texto relativo a imagem do slide que está sendo apresentado</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../imgs/imagem02.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Titulo da iamgem</h3>
+                                <p>Texto relativo a imagem do slide que está sendo apresentado</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../imgs/imagem02.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Titulo da imagem</h3>
+                                <p>Texto relativo a imagem do slide que está sendo apresentado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#carousel01" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+
+                    <a href="#carousel01" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

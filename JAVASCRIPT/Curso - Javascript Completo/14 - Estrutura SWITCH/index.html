@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Estrutura SWITCH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <p>
+        <button onclick="testSwitch()">Click Here to result</button>
+    </p>
+
+    <p>
+        <span id="demo"></span>
+    </p>
+
+    <script>
+    
+        function testSwitch(){
+            var x = 2;
+            var result;
+
+            switch(x){
+
+                case 0:
+                    result = "0";
+                    break;
+                case 1:
+                    result = "1";
+                    break;
+                case 2:
+                    result = "2";
+                    break;
+                case 3: 
+                    result = "3";
+                    break;
+                case 4:
+                    result = "4";
+                    break;
+                case 5:
+                    result = "5";
+                    break;
+                default:
+                    result = "nothing";
+                    break;
+
+            }
+
+            document.getElementById("demo").innerHTML = result;
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+#calendario {
+    height: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: #222;
+}
+
+img.ui-datepicker-trigger {
+    vertical-align: sub;
+}

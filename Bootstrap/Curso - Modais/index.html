@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Modais com Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="btn btn-primary" id="btn-modal-alert">
+        Assinar a newsletter
+    </button>
+
+    <div class="modal fade" id="modal-form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Newsletter</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtemail">E-mail</label>
+                        <input type="email" id="txtemail" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal" id="btn-cancelar">Cancelar</button>
+                    <button class="btn btn-success" data-dismiss="modal" id="btn-assinar">Assinar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $('#btn-modal-alert').click(function () {
+            $('#modal-form').modal();
+        });
+
+        $('#btn-assinar').click(function () {
+            var email = $('#txtemail').val();
+            alert("Email " + email + " cadastrado com sucesso.");
+        });
+    </script>
+
+</body>
+
+</html>

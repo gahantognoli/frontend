@@ -1,0 +1,146 @@
+/* css personalizado */
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.slider-page {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #28292B;
+}
+
+.img-slider {
+    border-radius: 3px;
+}
+
+section {
+    padding-top: 26px;
+    padding-bottom: 15px;
+    min-height: auto;
+}
+
+section:nth-of-type(2n+1) {
+    background: #EEE;
+}
+
+.separador-conteudo {
+    height: 1px;
+    background-color: #6c757d;
+}
+
+.servicos-item {
+    text-align: center;
+    line-height: 22px;
+}
+
+.btn-todos-servicos {
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.btn-mais-trabalhos {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+.titulo-item {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.portfolio-descricao {
+    background-color: #EEE;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.portfolio-texto {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-img-empresa {
+    margin-bottom: 20px;
+}
+
+.img-empresa {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.texto-localizacao {
+    font-size: 18px;
+}
+
+.texto-localizacao:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+#img-localizacao {
+    font-size: 32px;
+    margin-top: 4px;
+}
+
+.botao-formulario-contato {
+    margin-bottom: 15px;
+}
+
+#txtMensagem, #txtObservacoes 
+{
+    height: 182px;
+}
+
+footer {
+    background-color: #039BE5;
+    color: white;
+    font-size: 18px;
+    height: auto;
+    padding: 10px 5px 10px 5px;
+}
+
+.icone-rodape {
+    font-size: 32px;
+}
+
+.rodape-conteudo{
+    vertical-align: middle;
+}
+
+.conteudo-footer {
+    margin-top: 20px;
+}
+
+.servicos-item-interno {
+    margin-bottom: 20px;
+}
+
+.form-login {
+    max-width: 350px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EEE;
+}
+
+.conteudo_painel {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #EEE;
+    box-shadow: 5px 5px 5px #888; /* [eixo x, eixo y, dissipação, cor] */
+}
+
+.conteudo_painel_int {
+    padding: 8px;
+}

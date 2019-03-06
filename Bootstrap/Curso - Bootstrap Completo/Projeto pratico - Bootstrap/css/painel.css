@@ -1,0 +1,12 @@
+body {
+    background: url('../imgs/slider/old_moon.png');
+    padding-top: 80px;
+}
+
+.titulo {
+    line-height: 30px;
+}
+
+.panel {
+    margin-bottom: 0px;
+}

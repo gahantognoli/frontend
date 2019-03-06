@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Sintaxe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h3>Testing JSON Sixtax in JavaScript</h3>
+
+    <p>
+        Old car:
+        <span id="oldcar"></span>
+    </p>
+
+    <p>
+        New car:
+        <span id="newcar"></span>
+    </p>
+
+
+    <div>
+        <button id="btnTrocaCarro">Trocar de carro</button>
+    </div>
+
+    <script>
+
+        var employees = [
+            { "automaker": "VW", "model": "Golf" },
+            { "automaker": "Porsche", "model": "911" },
+            { "automaker": "Ferrari", "model": "F50" },
+            { "automaker": "Audi", "model": "A8" }
+        ];
+
+        console.log(employees);
+
+        document.getElementById("oldcar").innerHTML = employees[3].automaker + " " + employees[3].model;
+
+        function trocarCarro(){
+            //Trocando valores do objeto json
+            employees[3].automaker = "BMW";
+            employees[3].model = "540i";
+
+            document.getElementById("newcar").innerHTML = employees[3].automaker + " " + employees[3].model;
+        }
+
+        document.getElementById("btnTrocaCarro").onclick = trocarCarro;
+
+    </script>
+
+</body>
+
+</html>

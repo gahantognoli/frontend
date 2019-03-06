@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Objeto String do Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="TestString1()">Click Here test String 1</button>
+    </p>
+
+    <p>
+        <button onclick="TestString2()">Click Here test String 2</button>
+    </p>
+
+    <p>
+        <button onclick="TestString3()">Click Here test String 3</button>
+    </p>
+
+    <p>
+        <button onclick="TestString4()">Click Here test String 4</button>
+    </p>
+
+    <script type="text/Javascript">
+
+        function TestString1(){
+            var name = "Gabriel Antognoli";
+            var character = name[9]; //pegando o caracter de posição 9 na string.
+            alert(character);
+        }
+
+        function TestString2(){
+            var name = "Gabriel Antognoli";
+            var x = name.length; //tamanho da string
+            alert(x);
+        }
+
+        function TestString3(){
+            var str = "Welcome Gabriel Antognoli";
+            var n = str.indexOf("Gabriel");
+            alert(n);
+        }
+
+        function TestString4(){
+            var str = "Welcome Gabriel Antognoli";
+            var n = str.slice(0,7);
+            alert(n);
+        }
+
+    </script>
+
+</body>
+
+</html>

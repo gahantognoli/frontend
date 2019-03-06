@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18</title>
+    <!-- Adicionar CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+                <h1>Tabs</h1>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="">Titulo do Link</a></li>
+                    <li><a href="">Titulo do Link</a></li>
+                    <li><a href="">Titulo do Link</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Titulo do Link <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu 1</a></li>
+                            <li><a href="#">Menu 2</a></li>
+                            <li><a href="#">Menu 3</a></li>
+                            <li><a href="#">Menu 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>Justified</h2>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#">Titulo do Link</a></li>
+                    <li><a href="#">Titulo do Link</a></li>
+                    <li><a href="#">Titulo do Link</a></li>
+                </ul>
+
+           </div>
+
+           <div class="col-xs-12">
+               <h1>Pills</h1>
+               <ul class="nav nav-pills">
+                   <li class="active"><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+               </ul>
+
+               <hr />
+
+               <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="#">Titulo do link</a></li>
+                    <li><a href="#">Titulo do link</a></li>
+                    <li><a href="#">Titulo do link</a></li>
+               </ul>
+
+               <hr />
+
+               <ul class="nav nav-pills nav-stacked">
+                   <li class="active"><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+                   <li><a href="#">Titulo do Link</a></li>
+               </ul>
+
+           </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

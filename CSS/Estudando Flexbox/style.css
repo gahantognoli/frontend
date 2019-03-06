@@ -1,0 +1,32 @@
+.container {
+    background-color: #FF5722;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Forma simplificada de declaração das propriedades flex-direction e flex-wrap */
+    /*flex-flow: row wrap;*/
+}
+
+.item {
+    background-color: #0000ff;
+    color: #fff;
+    padding: 10px;
+}
+
+.item1 {
+    height: 100px;
+    width: 100px;
+}
+
+.item2 {
+    height: 50px;
+    width: 150px;
+}
+
+.item3 {
+    height: 100px;
+    width: 200px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trabalhando com a DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <input type="text" name="nome" /> <!-- id="nome" class="nome" -->
+    <input type="text" name="nome" id="nome2" />
+    <button class="botao">Adicionar</button>
+
+    <script>
+        //retorna o elemento da DOM com o id "nome"
+        //var inputElement = document.getElementById("nome");
+        
+        //retorna o elemento da DOM do tipo input
+        //var inputElement = document.getElementsByTagName("input");
+        
+        //retorna o elemento da DOM com a classe "nome"
+        //sempre retorna um vetor(HTMLCollection), pois a classe não é única.
+        //var inputElement = document.getElementsByClassName("nome");
+        
+        //Caso queira pegar o primeiro elemento do HTMLCollection.
+        //var inputElement = document.getElementsByClassName("nome")[0]; 
+        
+        //Com o querySelector é possível percorrer o DOM para encontrar um elemento, é uma outra forma do javascript
+        // para selecionar elementos.
+        var inputElement = document.querySelector("div#app input");
+        var inputElement = document.querySelector("input[name=nome]");
+        
+        //IMPORTANTE: o querySelector seleciona apenas o primeiro elemento encontrado, para selecionar mais de 
+        // um elemento, pode ser usado o querySelectorAll, como no exemplo abaixo:
+        var inputElements = document.querySelectorAll("input");
+
+        console.log(inputElement);
+        console.log(inputElements);
+        
+        //Exemplo manipulação de EVENTOS no JS
+        var input = document.querySelector("input[name=nome]");
+        var botao = document.querySelector(".botao");
+
+        botao.onclick = function() {
+            var textoInput = input.value;
+            alert(textoInput);
+        }
+    </script>
+</body>
+</html>

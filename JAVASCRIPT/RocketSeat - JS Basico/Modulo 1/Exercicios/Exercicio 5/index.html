@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JS - Exercicio 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+        //Exercicio 5
+
+        /*
+            Dado o seguinte vetor de objetos:
+
+            var usuarios = [
+            {
+                nome: 'Diego',
+                habilidades: ['Javascript', 'ReactJS', 'Redux']
+            },
+            {
+                nome: 'Gabriel',
+                habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+            }
+            ];
+            Escreva uma função que produza o seguinte resultado:
+
+            O Diego possui as habilidades: Javascript, ReactJS, Redux
+            O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+            Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e 
+            para unir valores de um array com um separador utilize o join.
+
+        */
+
+        //Criando a função
+
+        function habilidadesUsuarios(usuarios) {
+            for (let valor of usuarios) {
+
+                var usuario = valor.nome;
+                var habilidadesUsuario = valor.habilidades;
+
+                console.log("O " + usuario + " possui as habilidades: " + habilidadesUsuario.join(", "));
+
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: 'Diego',
+                habilidades: ['Javascript', 'ReactJS', 'Redux']
+            },
+            {
+                nome: 'Gabriel',
+                habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+            }
+        ];
+
+        habilidadesUsuarios(usuarios);
+
+    </script>
+</body>
+
+</html>

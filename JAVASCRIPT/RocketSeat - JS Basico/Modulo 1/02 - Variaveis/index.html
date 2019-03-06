@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+
+    <script>
+        /*
+        javascript é recomendado que essa tag seja inserida no final do documento html, pois o carregamento da página
+        é feito na vertical e pode ocorrer de algum elemento que o seu código js utiliza ainda não tenha sido 
+        renderizado
+        */
+
+        // O javascript trabalha com tipagem dinâmica.
+        var nome = "Gabriel"; //string.
+        var idade = 20; //inteiro.
+        var peso = 82.3 //float - SEPARADO SEMPRE POR "."
+        var humano = true //false - boleano.
+
+        //Vetores || Começam pelo index 0 e são declados com [];
+        var alunos = ["Gabriel", "Junior", "Lucas"];
+
+        //Objeto || são declarados com {};
+        var aluno = {
+            //propriedades do objeto são separadas por ":" e não por "="
+            nome: alunos[0],
+            idade: 20,
+            peso: 82.3,
+            humano: true
+        };
+
+        //Função global do javascript.
+        console.log(alunos[1]); // acessar vetor basta passar o indice entre []
+        console.log(aluno); // acessar propriedade do objeto basta utiliza o "." com o nome da propriedade.
+
+        
+    </script>
+</body>
+</html>

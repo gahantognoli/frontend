@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário em etapas</title>
+    <!-- Bootstrap v3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    Micro curso de Bootstrap
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Nav tabs -->
+            <ul id="tabEtapas" class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#etapa1" aria-controls="etapa1" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#etapa2" aria-controls="etapa2" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#etapa3" aria-controls="etapa3" role="tab" data-toggle="tab">Messages</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="etapa1">
+                    <h2>Etapa 1</h2>
+                    <form action="">
+                        <div class="form-group col-md-6">
+                            <label for="">Nome</label>
+                            <input type="text" id="nome" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">E-mail</label>
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                    </form>
+                    <button class="btn btn-info" onclick="alteraEtapa('1')">Próxima etapa</button>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="etapa2">
+                    <h2>Etapa 2</h2>
+                    <form action="">
+                        <div class="form-group col-md-6">
+                            <label for="">Cidade</label>
+                            <input type="text" id="cidade" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Estado</label>
+                            <input type="text" id="estado" class="form-control">
+                        </div>
+                    </form>
+                    <button class="btn btn-info" onclick="alteraEtapa('2')">Próxima etapa</button>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="etapa3">
+                    <h2>Etapa 3</h2>
+                    <form action="">
+                        <div class="form-group col-md-6">
+                            <label for="">Facebook</label>
+                            <input type="text" id="facebook" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Twitter</label>
+                            <input type="text" id="twitter" class="form-control">
+                        </div>
+                    </form>
+                    <button class="btn btn-success" onclick="alteraEtapa('3')">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importação java script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validacao.js"></script>
+
+</body>
+
+</html>

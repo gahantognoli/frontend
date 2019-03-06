@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Try, Catch, Finally e Throw</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="ShowMessage()">Chick Here to result</button>
+    </p>
+
+    <p id="out1">
+    </p>
+
+    <br>
+    <p>
+        Please input a number between 1 and 10:
+        <br>
+        <input type="text" id="userInput" name="userInput" />
+        <br>
+        <button onclick="testThrow()">Click Here</button>
+    </p>
+
+    <script>
+
+        //Erro de sintaxe.
+        function ShowMessage() {
+            try {
+                exxxalert("Hello World!");
+            } catch (error) {
+                var txt = "There was an error on this page. \n\n";
+                txt += "Error description: " + error.message;
+                alert(txt);
+            } finally {
+                document.getElementById("out1").innerHTML = "Finally...";
+            }
+        }
+
+        //testando o throw
+        //Erro de execução.
+        function testThrow() {
+            var x = document.getElementById("userInput").value;
+            
+            try {
+                if (x == "") throw "vazio";
+                if (x > 10) throw "valor muito grande";
+                if (x < 0) throw "valor muito pequeno";
+            } catch (error) {
+                alert("Error: " + error);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

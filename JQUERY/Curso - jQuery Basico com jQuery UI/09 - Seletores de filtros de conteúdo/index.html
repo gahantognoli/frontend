@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Seletores de filtros de conteúdo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+    
+        .vazio {
+            width: 300px;
+            height: 30px;
+            border: 1px solid red;
+        }
+
+        .cheio {
+            text-decoration: underline;
+        }
+    
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //Seletores de filtros de conteúdo
+            //$('div:contains("azul")').css('font-weigth', 'bold');
+            
+            //Se está vazio
+            //$('div:empty').addClass('vazio');
+            //$('td:empty').addClass('vazio');
+            
+            //Se tem conteudo.
+            //$('div:parent').addClass('cheio');
+            //$('td:parent').addClass('cheio');
+
+            //verifica se existe span dentro da tag
+            $('div:has("span")').css('background-color', 'green');
+            $('td').has('span').css('background-color', 'green');
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div><span>O céu e azul</span></div>
+    <div>Curso Devmedia</div>
+    <div></div>
+
+    <table border="1" cellspacing="0" cellpadding="3">
+
+        <tr>
+            <td>Nome</td>
+            <td><span>Idade</span></td>
+            <td>Endereço</td>
+        </tr>
+
+        <tr>
+            <td>Diego</td>
+            <td>24</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Sandra</td>
+            <td></td>
+            <td>R Teste 2</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

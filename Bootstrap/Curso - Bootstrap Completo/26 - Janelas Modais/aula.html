@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24</title>
+    <!-- Adicionar CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Janelas Modais</h1>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal01">
+                    Abrir janela modal
+                </button>
+
+                <!-- Janela modal -->
+                <div class="modal fade" id="modal01" role="dialog" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Conteudo da janela modal</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button class="btn btn-primary">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- // Janela modal -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

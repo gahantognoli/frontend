@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Window.Screen e Window.Location</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <p id="resWidth"></p>
+    <p id="resHeigth"></p>
+    <button onclick="showRes()">Show informations screen</button>
+
+    <br>
+
+    <p id="myUrl"></p>
+    <button onclick="showUrl()">Show Url</button>
+
+    <br>
+    <br>
+
+    <button onclick="newSite()">Load DevMedia Site</button>
+
+    <script>
+        function showRes(){
+            var width = screen.availWidth;
+            var heigth = screen.availHeight;
+
+            document.getElementById("resWidth").innerHTML = width;
+            document.getElementById("resHeigth").innerHTML = heigth;
+        }
+
+        function showUrl(){
+            var currentUrl = location.href;
+            document.getElementById("myUrl").innerHTML =  currentUrl;
+        }
+
+        function newSite(){
+            window.location.assign("https://www.devmedia.com.br/");
+        }
+
+    </script>
+
+</body>
+</html>

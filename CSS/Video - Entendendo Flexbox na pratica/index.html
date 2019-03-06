@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <section id="content">
+        <article class="item">01</article>
+        <article class="item">02</article>
+        <article class="item">03</article>
+        <article class="item">04</article>
+    </section>
+
+    <style>
+        #content {
+            background: #e7eef5;
+            height: 500px;
+            display: flex;
+            flex-direction: row; /* row(default), column, row-reverse, column-reverse */
+            flex-wrap: nowrap; /* nowrap(default) wrap wrap-reverse */
+            justify-content: flex-start; 
+        }
+
+        .item {
+            flex-grow: 0; /* Ocupamento do resto da largura da div */
+            flex-shrink: 1; /* Encolhe a div */
+            flex-basis: 60px; /* auto = Define uma largura de cada elemento caso não tenha */
+            height: 100px;
+            width: 100px;
+            color: black;
+            -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+            background: white; 
+            margin: 5px;
+        }
+
+        .item:nth-child(1){
+            flex-grow: 1; /* Ocupa o resto da largura ou altura de acordo com o flex-direction do container */
+            order: 4
+        }
+
+        .item:nth-child(2){
+            order: 2
+        }
+
+        .item:nth-child(3){
+            order: 1
+        }
+
+        .item:nth-child(4){
+            order: 3
+        }
+
+    </style>
+
+</body>
+</html>

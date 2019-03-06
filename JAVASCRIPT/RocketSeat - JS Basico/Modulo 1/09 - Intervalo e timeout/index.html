@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <script>
+        // intervalo e timeout.
+        
+        function exibeAlgo(){
+            console.log("Hello World.");
+        }
+
+        //Executa a função "exibeAlgo" a cada 1 segundos(1000ms).
+        //Passamos o nome da função sem o "()", pois estamos referenciando a função como parâmetro, se colocarmos os 
+        //"()" o javascript estará entendo que estamos EXECUTANDO A FUNÇÃO e não CHAMANDO.
+        setInterval(exibeAlgo, 1000);
+
+        //executa apenas UMA VEZ, esperando o tempo passado como parâmetro para executar, no caso e segundos(2000ms).
+        setTimeout(exibeAlgo, 2000);
+    </script>
+</body>
+</html>

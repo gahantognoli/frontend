@@ -1,0 +1,12 @@
+/* css personalizado */
+.linhaCinza {
+    background-color: gray;
+}
+
+.linhaAmarela {
+    background-color: yellow;
+}
+
+.bg-color-padding p {
+    padding: 15px;
+}

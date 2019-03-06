@@ -1,0 +1,11 @@
+.box-faturamente {
+  padding: 30px;
+}
+
+.box-faturamento h1 {
+  margin: 0;
+}
+
+div{
+  display: flex;
+}

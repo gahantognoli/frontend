@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Declarando Funções</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        function myFunction(){
+            alert("Hello World!");
+        }
+        
+        //com parâmetros.
+        function myCalc(x, y){
+            return x + y;
+        }
+
+        function myResult(){
+            document.getElementById("demo").innerHTML = myCalc(3,3);
+        }
+
+    </script>
+</head>
+<body>
+
+    <p>
+        <button onclick="myFunction()">Click Here</button>
+    </p>
+
+    <p>
+        <button onclick="myResult()">Click here to result</button>
+    </p>
+
+    <p>
+        <span id="demo" name="demo"></span>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML DOM Introdução</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="testFindingById()">Click Here to Test 1</button>
+    </p>
+
+    <p>
+        <button onclick="testeFindingByTagName()">Click Here to Test 1</button>
+    </p>
+
+    <p id="demo">
+        Hello World!
+    </p>
+
+    <br>
+
+    <div id="main">
+        <p>DevMedia is a Great Company.</p>
+        <p>Gabriel Antognoli is a Developer.</p>
+        <p>My favorite colors are: green and black.</p>
+
+    </div>
+
+    <script>
+
+        function testFindingById() {
+            var x = document.getElementById("demo");
+            alert(x.innerHTML);
+        }
+
+        function testeFindingByTagName() {
+            var x = document.getElementById("main");
+            var y = x.getElementsByTagName("p");
+            alert(y[0].innerHTML);
+        }
+
+    </script>
+
+</body>
+
+</html>

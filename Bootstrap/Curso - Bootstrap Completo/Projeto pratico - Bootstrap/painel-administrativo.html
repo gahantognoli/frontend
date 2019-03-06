@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Painel Administrativo</title>
+    <!-- Google web fonts [font: Lato] -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/painel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand titulo" href="#">Painel Administrativo</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-area-chart fa-2x"></i> </a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false"><i class="fa fa-user fa-2x"></i> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Minha conta</a></li>
+                                <li><a href="#">Trocar senha</a></li>
+                                <li><a href="#">Logoff</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-3">
+                <!-- menu nagecação lateral -->
+                <div class="panel panel-default">
+                    <div id="colGroup1" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroup1" aria-controls="colListGroup1" aria-expanded="true" data-toggle="collapse">
+                                <span class="glyphicon glyphicon-file"></span> Gerencias posts
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="panel-collapse in" role="tab-panel" id="colListGroup1" aria-expanded="true">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Criar novo POST</a></li>
+                            <li class="list-group-item"><a href="#">Alterar POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Excluir POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Excluir POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Gerenciar acessos</a></li>
+                            <li class="list-group-item"><a href="#">Incluir banner</a></li>
+                            <li class="list-group-item"><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="panel panel-default">
+                    <div id="colGroup1" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroup2" aria-controls="colListGroup2" aria-expanded="true" data-toggle="collapse">
+                                <span class="glyphicon glyphicon-user"></span> Gerencias Usuários
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="panel-collapse in" role="tab-panel" id="colListGroup2" aria-expanded="true">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Criar novo POST</a></li>
+                            <li class="list-group-item"><a href="#">Alterar POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Excluir POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Excluir POSTS</a></li>
+                            <li class="list-group-item"><a href="#">Gerenciar acessos</a></li>
+                            <li class="list-group-item"><a href="#">Incluir banner</a></li>
+                            <li class="list-group-item"><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- // menu nagecação lateral -->
+            </div>
+
+            <!-- Conteudo -->
+            <div class="col-md-9">
+                <div class="conteudo_painel">
+                    <div class="conteudo_painel_int">
+                        
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class=""><a href="#">E-mails <span class="badge">10</span></a></li>
+                            <li class=""><a href="#">Avisos <span class="badge">7</span></a></li>
+                            <li class=""><a href="#">Notificações <span class="badge">13</span></a></li>
+                            <li class=""><a href="">Aniversariantes <span class="badge">1</span></a></li>
+                        </ul>
+
+                        <hr />
+
+                        <div class="well well-sm">
+                            <h2>Seja bem - vindo usuário</h2>
+                            <p>Utilize o menu ao lado para acessar as áreas do painel</p>
+                        </div>
+
+                        <div class="page-header">
+                            <h3>Avisos</h3>
+                            <div class="alert alert-info">
+                                <strong>Nova atualização hoje as 10:00 horas</strong>
+                            </div>
+
+                            <div class="alert alert-danger">
+                                <strong>O servidor de banco de dados está com o desempenho comprometido!</strong>
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <strong>O servidor de banco de dados será reiniciado em 15 minnutos!</strong>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>Minhas tarefas</h3>
+                                    <ul>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                    </ul>
+                                    <a href="" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h3>Minhas tarefas</h3>
+                                    <ul>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                    </ul>
+                                    <a href="" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h3>Minhas tarefas</h3>
+                                    <ul>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                        <li>Ligar para Fulano</li>
+                                    </ul>
+                                    <a href="" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- // Conteudo -->
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

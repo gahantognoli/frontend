@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Array</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>
+        <button onclick="TesteArray1()">Click Here to Teste 1</button>
+    </p>
+
+    <p>
+        <button onclick="TesteArray2()">Click Here to Teste 2</button>
+    </p>
+
+    <p>
+        <span id="demo" name="demo">Result is Here!</span>
+    </p>
+
+    <script>
+        function TesteArray1() {
+            var fruits = new Array();//Criando um objeto array.
+            fruits[0] = "Apple";
+            fruits[1] = "Lemon";
+            fruits[2] = "Orange";
+            fruits[3] = "Pineapple";
+
+            alert(fruits[1]);
+        }
+
+        function TesteArray2() {
+            var myColors = new Array();
+            myColors[0] = "Red";
+            myColors[1] = "Green";
+            myColors[2] = "Blue";
+            myColors[3] = "Yellow";
+            myColors[4] = "Black";
+            myColors[5] = "White";
+
+            var i;
+            var out = "";
+
+            for (var i = 0; i < myColors.length; i++) {
+                out += myColors[i] + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = out;
+
+        }
+    </script>
+
+</body>
+
+</html>

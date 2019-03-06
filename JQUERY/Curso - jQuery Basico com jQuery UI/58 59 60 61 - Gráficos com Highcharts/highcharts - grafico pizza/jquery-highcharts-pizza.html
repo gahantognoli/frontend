@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI - DevMedia</title>
+		
+		<script type="text/javascript" src="jquery-ui-1.11.2.custom/external/jquery/jquery.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="highcharts.js"></script>
+		<script type="text/javascript" src="exporting.js"></script>
+		
+		<style type="text/css">
+			
+		</style>
+		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#chart-pizza').highcharts({
+					chart: {
+						plotBackgroundColor: null,
+						plotBorderWidth: null,
+						plotShadow: false
+					},
+					title: {
+						text: 'Tipos de comidas preferidas pelos brasileiros.'
+					},
+					tooltip: {
+						pointFormat: '{series.name}: <br><b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions : {
+						pie : {
+							allowPointSelect : true, //quando colocar mouse em cima.
+							cursor : 'pointer',
+							dataLabels : { //formata exibição das labels, que ficam abaixo do gráfico.
+								enabled : true,
+								format : '<b>{point.name}</b>: {point.percentage:.1f}%' ,
+								color : 'black'
+							},
+							showInLegends : true 
+						}
+					},
+					series : [{ //dados = vetor '[]' de informações.
+						type : 'pie',
+						name : 'Comidas preferidas dos brasilieros',
+						data : 
+						[ // vetor com as informações do gráfico
+							['Feijoada', 36.2],
+							['Macarronada', 12.2],
+							['Sushi', 2.6],
+							{
+								name : 'Arroz e Feijão',
+								y : 87.96,
+							},
+							['Outros', 125.56]
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>Exemplo Gráfico Pizza Highcharts</h1>
+			
+			<div id="chart-pizza"></div>
+		</div>
+	</body>
+</html>

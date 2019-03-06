@@ -1,0 +1,28 @@
+.dvm-button {
+    color: #fff;
+    background-color: green;
+    border: none;
+    height: 60px;
+    line-height: 30px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.dvm-button:hover {
+    transform: scale(1.05);
+}
+
+.dvm-circle {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 12px;
+    height: 20px;
+    width: 20px;
+    /* CSS modificado para utilizar % em vez de valores fixos */
+    /*border-radius: 15px;*/
+    border-radius: 50%;
+}
